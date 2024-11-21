@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.headerContainer {
+  position: fixed;
+  top: 0;
+  width: 94vw;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #ffffff;
+  padding: 1em 3em 1em 2em;
+  border-bottom: 1px solid rgb(71, 71, 71);
+}
+.headerContainer img {
+  width: 125px;
+}
+.headerContainer .headerTextGroup {
+  display: flex;
+  gap: 1.7em;
+  font-size: 1.5em;
+}
+.headerContainer .headerTextGroup span,
+.headerContainer .headerTextGroup a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.headerContainer .headerTextGroup span:hover,
+.headerContainer .headerTextGroup a:hover {
+  border-bottom-color: #ffffff;
+}
+
+.mainWrapper .mainContainer {
+  background-image: url("../img/simple-wooden-barber-chair-studio-lights.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainWrapper .mainContainer .imageOverlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.mainWrapper .mainContainer .imageOverlay .middleBrandName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainWrapper .mainContainer .imageOverlay .middleBrandName span {
+  color: #ffffff;
+  font-weight: 600;
+}
+.mainWrapper .mainContainer .imageOverlay .middleBrandName span:nth-child(1) {
+  font-size: 2em;
+  animation: showUp 1s ease;
+}
+.mainWrapper .mainContainer .imageOverlay .middleBrandName span:nth-child(2) {
+  font-size: 3em;
+  animation: showUp 1s ease 50ms;
+}
+.mainWrapper .mainContainer .imageOverlay .middleBrandName span:nth-child(3) {
+  font-size: 4em;
+  animation: showUp 1s ease 75ms;
+}
+.mainWrapper .mainContainer .imageOverlay .textContainer {
+  width: 30%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.25em;
+  animation: showUp 1s ease 100ms;
+}
+.mainWrapper .whyChooseUs {
+  background-image: url("../img/close-up-sewing-machine.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainWrapper .whyChooseUs .imageOverlay {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+.mainWrapper .whyChooseUs .imageOverlay span {
+  font-size: 2.5em;
+  color: #ffffff;
+  font-weight: 600;
+}
+.mainWrapper .whyChooseUs .imageOverlay .section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}
+.mainWrapper .whyChooseUs .imageOverlay .section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mainWrapper .whyChooseUs .imageOverlay .spanWrapper {
+  display: flex;
+  gap: 2em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}
+.mainWrapper .whyChooseUs .imageOverlay .spanWrapper svg {
+  font-size: 4.5em;
+}
+.mainWrapper .whyChooseUs .imageOverlay .spanWrapper .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.mainWrapper .whyChooseUs .imageOverlay .spanWrapper .container span {
+  font-size: 1.65em;
+  margin-bottom: 8px;
+}
+.mainWrapper .whyChooseUs .imageOverlay .spanWrapper .container p {
+  font-size: 1.25em;
+}
+.mainWrapper .whyChooseUs .imageOverlay .spanWrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mainWrapper .creativeCinema {
+  background-image: url("../img/professional-lighting-equipment-movie-set-with-smoke-air.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainWrapper .creativeCinema .imageOverlay {
+  width: 100%;
+  height: 75vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: #ffffff;
+}
+.mainWrapper .creativeCinema .imageOverlay .spanWrapper {
+  font-size: 2.5em;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}
+.mainWrapper .creativeCinema .imageOverlay .spanWrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mainWrapper .creativeCinema .imageOverlay .section {
+  width: 50%;
+  font-size: 1.5em;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}
+.mainWrapper .creativeCinema .imageOverlay .section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mainWrapper .latestProducts {
+  background-image: url("../img/world-theatre-day-celebration.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainWrapper .latestProducts .imageOverlay {
+  width: 100%;
+  height: 75vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.mainWrapper .latestProducts .imageOverlay span {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.mainWrapper .latestProducts .imageOverlay .products {
+  display: flex;
+  gap: 6em;
+  justify-content: center;
+}
+.mainWrapper .latestProducts .imageOverlay .products .productCard {
+  background-color: rgba(66, 59, 59, 0.7);
+  width: 40%;
+  display: flex;
+  padding: 1em;
+  border-radius: 1em;
+  gap: 1em;
+}
+.mainWrapper .latestProducts .imageOverlay .products .productCard div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1em;
+}
+.mainWrapper .latestProducts .imageOverlay .products .productCard div span {
+  font-weight: 500;
+}
+.mainWrapper .latestProducts .imageOverlay .products .productCard div span:nth-child(1) {
+  font-size: 1.5em;
+}
+.mainWrapper .latestProducts .imageOverlay .products .productCard div span:nth-child(2) {
+  font-size: 1em;
+}
+
+.footer {
+  background: rgb(31, 30, 30);
+  padding: 0.7em 0 0.7em 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.8em;
+  color: #c7c7c7;
+}
+.footer a {
+  color: inherit;
+}
+
+.contactUsWrapper {
+  background-image: url("../img/man-cafe-racer-style-motorbike.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contactUsWrapper .imageOverlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.contactUsWrapper .imageOverlay .contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  color: #ffffff;
+  animation: showUp 1s ease;
+}
+.contactUsWrapper .imageOverlay .contactUs h3 {
+  font-size: 2em;
+}
+.contactUsWrapper .imageOverlay .contactUs span {
+  font-size: 1.2em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  animation: showUp 1s ease 100ms;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails .detailContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails .detailContainer .svgSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  padding: 10px;
+  border-radius: 100%;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails .detailContainer .svgSpan svg {
+  color: #ffffff;
+  font-size: 1.75em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails .detailContainer .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails .detailContainer .details span {
+  background: none;
+  font-weight: 700;
+  font-size: 1.35em;
+  color: #ffffff;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .contactDetails .detailContainer .details p {
+  color: #ffffff;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .sendMessage {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border-radius: 1em;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 2em;
+  width: 20vw;
+  animation: showUp 1s ease 100ms;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .sendMessage span {
+  color: #ffffff;
+  font-size: 1.4em;
+  margin-bottom: 0.75em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .sendMessage form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .sendMessage form .textInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  padding: 3px;
+  font-size: 1.05em;
+  color: #ffffff;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .sendMessage form .submitBtn {
+  width: 25%;
+  font-size: 1em;
+  padding: 1px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(169, 169, 169);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.contactUsWrapper .imageOverlay .bottomContainer .sendMessage form .submitBtn:hover {
+  background: rgb(68, 68, 68);
+  transition: 0.2s ease;
+}
+
+.aboutWrapper {
+  background-image: url("../img/portrait-plus-size-male-social-media-influencer.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.aboutWrapper .imageOverlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.aboutWrapper .imageOverlay .container {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding: 0.65em;
+  animation: showUp 1s ease;
+}
+.aboutWrapper .imageOverlay .container img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.aboutWrapper .imageOverlay .container .details {
+  font-size: 1em;
+  color: #e3e3e3;
+  margin-left: 1.5em;
+}
+.aboutWrapper .imageOverlay .container .details span {
+  font-weight: 600;
+}
+.aboutWrapper .imageOverlay .container .refs {
+  position: absolute;
+  right: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+.aboutWrapper .imageOverlay .container .refs svg {
+  font-size: 2em;
+  padding: 4px;
+  border-radius: 5px;
+  background: #423b3b;
+  transition: 0.3s ease;
+}
+.aboutWrapper .imageOverlay .container .refs svg:hover {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.aboutWrapper .imageOverlay .container .refs a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.whatDoWeDoWrapper {
+  background-image: url("../img/view-black-white-light-projector-theatre.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.whatDoWeDoWrapper .imageOverlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whatDoWeDoWrapper .imageOverlay .container {
+  width: 50%;
+  animation: showUp 1s ease;
+}
+.whatDoWeDoWrapper .imageOverlay .container p {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.portfolioWrapper {
+  background-image: url("../img/27230.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.portfolioWrapper .imageOverlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(66, 59, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
