@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# A Portfolio Website for Our Movie Studio [Live Server](https://bardakmoviestudios.netlify.app/)
+I used React.js and scss on this project. Responsive Design has not been done yet.
+![Ekran görüntüsü 2024-11-21 174449](https://github.com/user-attachments/assets/4a589e6d-6076-4a3a-ae47-7aa0302424e9)
+
+![Ekran görüntüsü 2024-11-21 174429](https://github.com/user-attachments/assets/d65f1aa9-7b53-46d3-b757-5b11d5cb933f)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
